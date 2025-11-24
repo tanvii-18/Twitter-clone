@@ -1,5 +1,7 @@
 import "./index.css";
 import Menu from "./screens/menu";
+import NewsPart from "./screens/newsPart";
+import Tweet from "./screens/tweet";
 
 function App() {
   return (
@@ -8,10 +10,10 @@ function App() {
         <Menu />
 
         {/* middle part main-content */}
-        <div className="h-auto w-150"></div>
+        <Tweet />
 
         {/* right side news part */}
-        <div className="h-screen w-80 border-l border-gray-400"></div>
+        <NewsPart />
       </div>
     </>
   );
