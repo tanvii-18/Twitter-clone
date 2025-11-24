@@ -5,8 +5,6 @@ React + Node.js + Express + File System (fs) + Middleware + Custom Modules
 
 A fully functional Mini Twitter (X) clone that supports creating, reading, updating, and deleting tweets with a clean Twitter-like UI.
 
-Live Demo: (Add your deployed link here later)
-
 ---
 
 ### Features
@@ -17,7 +15,7 @@ Live Demo: (Add your deployed link here later)
 - View all tweets in timeline
 - Character counter (280 max)
 - Responsive & modern UI
-- All data saved permanently in `tweets.json`
+- All data saved permanently in `data.json`
 
 ---
 
@@ -63,4 +61,5 @@ npm start
 cd Twitter-clone
 npm install
 npm start
+
 
