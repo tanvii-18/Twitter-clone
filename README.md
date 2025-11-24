@@ -31,30 +31,28 @@ A fully functional Mini Twitter (X) clone that supports creating, reading, updat
 
 ### Backend - API Endpoints
 
-| Method | Route                | Description                    |
-|--------|----------------------|--------------------------------|
-| GET    | `/api/tweets`        | Get all tweets                 |
-| POST   | `/api/tweets`        | Create a new tweet             |
-| PUT    | `/api/tweets/:id`    | Update tweet by ID             |
-| DELETE | `/api/tweets/:id`    | Delete tweet by ID             |
+| Method | Route             | Description        |
+| ------ | ----------------- | ------------------ |
+| GET    | `/api/tweets`     | Get all tweets     |
+| POST   | `/api/tweets`     | Create a new tweet |
+| PUT    | `/api/tweets/:id` | Update tweet by ID |
+| DELETE | `/api/tweets/:id` | Delete tweet by ID |
 
 Data stored in: `backend/data.json`
-
 
 ---
 
 ### How to Run
 
 **Backend**
-```bash
+
+````bash
 cd backend
 npm install
 npm start
 
 
 ---
-
-### How to Run
 
 **frontend**
 ```bash
@@ -63,3 +61,4 @@ npm install
 npm start
 
 
+````
