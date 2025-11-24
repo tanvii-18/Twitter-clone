@@ -1,7 +1,6 @@
 **HERE'S YOUR PERFECT GITHUB REPOSITORY DESCRIPTION** — ready to copy-paste!  
 Looks super professional, clean, and will get you full marks + extra respect
 
-```md
 # Mini Twitter Clone – Full-Stack Tweet App
 
 **Full-Stack Practical Assignment** (React + Express + Middleware + Modules)
@@ -20,8 +19,6 @@ A beautiful, fully functional **Mini Twitter (X) Clone** with real-time tweet po
 - Responsive & Twitter-like UI
 - Data persists in `tweets.json` file
 
----
-
 ### Tech Stack
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
@@ -30,8 +27,6 @@ A beautiful, fully functional **Mini Twitter (X) Clone** with real-time tweet po
 ![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![JSON](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)
-
----
 
 ### Backend (Node.js + Express)
 
@@ -51,8 +46,6 @@ A beautiful, fully functional **Mini Twitter (X) Clone** with real-time tweet po
 | PUT    | `/api/tweets/:id` | Edit tweet       |
 | DELETE | `/api/tweets/:id` | Delete tweet     |
 
----
-
 ### Frontend (React + Tailwind CSS)
 
 - Clean Twitter-like timeline
@@ -63,9 +56,8 @@ A beautiful, fully functional **Mini Twitter (X) Clone** with real-time tweet po
 - Fully responsive design
 - Uses `fetch()` API (no axios)
 
----
-
 ### Project Structure
+
 ```
 
 project/
@@ -82,18 +74,17 @@ project/
 ├── src/components/TweetForm.jsx
 └── vite.config.js (with proxy)
 
-````
-
----
+```
 
 ### How to Run
 
 #### Backend
+
 ```bash
 cd backend
 npm install
 npm start
-````
+```
 
 #### Frontend
 
