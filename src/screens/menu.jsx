@@ -190,7 +190,7 @@ function Menu() {
               </li>
             ))}
           </ul>
-          <button className="py-2 w-full border rounded-full bg-[#00A1F6] text-white my-5 cursor-pointer hover:bg-white hover:border-[#00A1F6] hover:text-[#00A1F6] duration-200">
+          <button className="py-2 w-full border rounded-full bg-[#00A1F6] text-white my-5 cursor-pointer hover:bg-white hover:border-[#00A1F6] hover:text-[#00A1F6] ">
             Tweet
           </button>
         </div>
