@@ -177,8 +177,8 @@ function Menu() {
   return (
     <>
       {/* left side menu part */}
-      <div className="h-screen w-80">
-        <div className="w-55 m-auto">
+      <div className="h-screen w-80 relative">
+        <div className="w-55 fixed top-0 right-0 left-8">
           <div className="logo">
             <img src="./public/logo.webp" alt="" className="h-14 w-14 mb-2" />
           </div>

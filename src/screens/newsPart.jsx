@@ -30,8 +30,8 @@ const trends = [
 
 function NewsPart() {
   return (
-    <div className="hidden lg:block w-80">
-      <div className="sticky top-0 bg-white">
+    <div className="hidden lg:block w-80 fixed right-2 top-0 h-screen overflow-y-auto">
+      <div className="bg-white min-h-screen">
         {/* Search Bar */}
         <div className="p-4">
           <div className="flex items-center gap-3 bg-gray-100 rounded-full px-4 py-2">

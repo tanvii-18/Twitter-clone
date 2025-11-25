@@ -72,7 +72,7 @@ function Tweet() {
   };
 
   return (
-    <div className="bg-gray-100">
+    <div className="h-auto bg-gray-100">
       <div className="h-auto w-150">
         {/* input part */}
 
@@ -97,7 +97,7 @@ function Tweet() {
                 type="text"
                 placeholder="What's happening?"
                 onChange={(e) => setContent(e.target.value)}
-                className=" outline-none border-none"
+                className="w-80 outline-none border-none content-center"
               />
             </div>
             <div>
@@ -117,68 +117,7 @@ function Tweet() {
         </div>
 
         {/* display part */}
-
-        <div className="rounded-xl px-4 py-2 m-2">
-          {tweets.length === 0 ? (
-            <p className="text-center text-gray-500 py-20 text-lg">
-              No tweets yet. Be the first to post!
-            </p>
-          ) : (
-            tweets.map((tweet) => (
-              <div
-                key={tweet.id}
-                className="px-4 py-4 hover:bg-gray-50 transition flex gap-4 rounded-xl m-2 bg-white"
-              >
-                <img
-                  src=""
-                  alt={tweet.author}
-                  className="w-12 h-12 rounded-full"
-                />
-                <div className="flex-1">
-                  <div className="flex items-center gap-2">
-                    <strong className="font-bold">{tweet.author}</strong>
-                    <span className="text-gray-400 text-[10px]">
-                      {new Date(tweet.createdAt).toLocaleString()}
-                    </span>
-                    {tweet.edited && (
-                      <span className="text-gray-400 text-xs">(edited)</span>
-                    )}
-                  </div>
-                  <div className="flex justify-between">
-                    <p className="mt-1 text-[16px] whitespace-pre-wrap">
-                      {tweet.content}
-                    </p>
-                    <button
-                      onClick={() => handleDelete(tweet.id)}
-                      className="mt-3 text-red-500 text-sm"
-                    >
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M19.5 5.5L18.8803 15.5251C18.7219 18.0864 18.6428 19.3671 18.0008 20.2879C17.6833 20.7431 17.2747 21.1273 16.8007 21.416C15.8421 22 14.559 22 11.9927 22C9.42312 22 8.1383 22 7.17905 21.4149C6.7048 21.1257 6.296 20.7408 5.97868 20.2848C5.33688 19.3626 5.25945 18.0801 5.10461 15.5152L4.5 5.5"
-                          stroke="#ba0b2e"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                        />
-                        <path
-                          d="M3 5.5H21M16.0557 5.5L15.3731 4.09173C14.9196 3.15626 14.6928 2.68852 14.3017 2.39681C14.215 2.3321 14.1231 2.27454 14.027 2.2247C13.5939 2 13.0741 2 12.0345 2C10.9688 2 10.436 2 9.99568 2.23412C9.8981 2.28601 9.80498 2.3459 9.71729 2.41317C9.32164 2.7167 9.10063 3.20155 8.65861 4.17126L8.05292 5.5"
-                          stroke="#ba0b2e"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            ))
-          )}
-        </div>
+        <div className="h-auto w-auto"></div>
       </div>
     </div>
   );
