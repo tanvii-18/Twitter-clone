@@ -1,7 +1,9 @@
 import express from "express";
 import fs from "fs";
+import cors from "cors";
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 const data = JSON.parse(fs.readFileSync("data.json", "utf-8"));
@@ -15,6 +17,21 @@ const storeData = () => {
   fs.writeFileSync("data.json", JSON.stringify(data, null, 2));
 };
 
+const tweetValidation = (content) => {
+  const trimmed = content.trim();
+  if (trimmed.length < 5) {
+    return "Tweet must be at least 5 characters long.";
+  }
+  if (trimmed.length > 280) {
+    return "Tweet cannot exceed 280 characters.";
+  }
+  if (trimmed === "") {
+    return "Tweet content cannot be empty.";
+  }
+  return null;
+};
+
+// get data
 app.get("/api/tweets", (req, res) => {
   res.json(data.tweets);
 });
@@ -24,8 +41,12 @@ app.get("/api/tweets", (req, res) => {
 app.post("/api/tweets", (req, res) => {
   const { content, author } = req.body;
 
-  if (!content || content.trim() === "") {
-    return res.status(400).send("content must be add");
+  // if (!content || content.trim() === "") {
+  //   return res.status(400).send("content must be add");
+  // }
+  const validation = tweetValidation(content);
+  if (validation) {
+    return res.status(400).json({ err: "content error" });
   }
 
   const createTweet = {
